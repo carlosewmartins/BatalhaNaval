@@ -20,9 +20,9 @@ def criar_tabuleiro():
 
 def imprimir_tabuleiro(tabuleiro, nome_jogador, ocultar_navios=False):
     print(f"--- Tabuleiro de {nome_jogador} ---")
-    #Desenha numeros das colunas
+    # Desenha numeros das colunas
     print("   " + " ".join([str(i) for i in range(LARGURA_TABULEIRO)]))
-    #Desenha topo do tabuleiro
+    # Desenha topo do tabuleiro
     print("  " + "-" * (LARGURA_TABULEIRO * 2 + 1))
 
     #Desenha pipe para esquerda e direita do tabuleiro,numero da linha, agua
@@ -34,14 +34,14 @@ def imprimir_tabuleiro(tabuleiro, nome_jogador, ocultar_navios=False):
             else:
                 print(f"{celula} ", end="")
         print("|")
-    #Desenha parte de baixo do tabuleiro
+    # Desenha parte de baixo do tabuleiro
     print("  " + "-" * (LARGURA_TABULEIRO * 2 + 1))
     print()
 
 
 def posicionar_navios_aleatoriamente(tabuleiro, numero_navios):
     navios_posicionados = 0
-    #Faz verificação de quantidade de navios posicionados, e para quando atinge o valor configurado
+    # Faz verificação de quantidade de navios posicionados, e para quando atinge o valor configurado
     while navios_posicionados < numero_navios:
         x = random.randint(0, LARGURA_TABULEIRO - 1)
         y = random.randint(0, ALTURA_TABULEIRO - 1)
@@ -208,6 +208,6 @@ def main():
 
         time.sleep(3)
 
-#Executa o programa
+# Executa o programa
 if __name__ == "__main__":
     main()
