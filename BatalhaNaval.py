@@ -179,6 +179,11 @@ def main():
             if verificar_vitoria(tabuleiro_maquina):
                 print(f"\n🎉 PARABÉNS, {nome_jogador}! VOCÊ VENCEU A BATALHA! 🎉")
                 imprimir_tabuleiro(tabuleiro_maquina, "Máquina")
+                print("Agradecemos por jogar! Trabalho feito por:")
+                print("- Carlos Eduardo Wille Martins")
+                print("- Raul Castelnou")
+                print("- Wlademir Alves de Souza")
+
                 break
         else:
             print("\n>>> ÁGUA! Você errou o alvo. <<<")
@@ -201,6 +206,10 @@ def main():
                 imprimir_tabuleiro(tabuleiro_maquina, "Máquina")
                 imprimir_tabuleiro(tabuleiro_jogador, nome_jogador)
                 print(f"\n☠️ FIM DE JOGO, {nome_jogador}! A MÁQUINA AFUNDOU SUA FROTA. ☠️")
+                print("Agradecemos por jogar! Trabalho feito por:")
+                print("- Carlos Eduardo Wille Martins")
+                print("- Raul Castelnou")
+                print("- Wlademir Alves de Souza")
                 break
         else:
             print("\n>>> A máquina errou! <<<")
