@@ -68,7 +68,7 @@ def posicionar_navios_jogador(tabuleiro, numero_navios, nome_jogador):
                     print("Entrada inválida. Por favor, digite um número.")
 
             while True:
-                input_y = int(input(f"Digite a coordenada Y (linha 0-{ALTURA_TABULEIRO - 1}): "))
+                input_y = input(f"Digite a coordenada Y (linha 0-{ALTURA_TABULEIRO - 1}): ")
                 if input_y.isdigit():
                     y = int(input_y)
                     break
